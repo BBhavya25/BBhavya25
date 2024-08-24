@@ -62,13 +62,13 @@ body {
 }
 
 .chatbot-footer {
-    padding: 20px;
+    padding: 10px;
     background-color: #e7ebec;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 10px;
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 8px;
 }
 
 .chatbot-select {
@@ -87,7 +87,7 @@ body {
 
 .chatbot-footer button {
     padding: 8px;
-    background-color: #007bff;
+    background-color: #07417f;
     color: white;
     cursor: pointer;
     border: none;
@@ -100,6 +100,40 @@ body {
 
 }
 
+
 .chatbot-footer button:hover {
     background-color: #c35e65;
 }
+
+#chatbot {
+     display: flex;
+    /* flex-direction: column; */
+    /* align-items: flex-start; Align elements to the left by default */ 
+    /* padding: 0px;  */
+    /* border: 1px solid #ccc; */
+    background-color: #f9f9f9;
+    width: 300px;
+    margin:30px;
+    position: relative; /* To position the button absolutely */
+  }
+
+  
+  #book-ticket {
+    position: absolute;
+    right: 0px; /* Adjust the right spacing */
+    bottom: 10px; /* Adjust the bottom spacing */
+    padding: 10px 20px;
+    background-color: #865d05;
+    color: white;
+    border: none;
+    margin-top: 70px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 20px;
+  }
+  
+  #book-ticket:hover {
+    background-color: #3e4c53;
+  }
+  
