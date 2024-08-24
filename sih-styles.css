@@ -1,0 +1,105 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #574758;
+}
+
+.chatbot-container {
+    width: 400px;
+    height: 600px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    
+    
+}
+
+.chatbot-header {
+    background-color: #3592f4;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.chatbot-body {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.chatbot-message {
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    max-width: 80%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.bot-message {
+    align-self: flex-start;
+    background-color: #e0e0e0;
+    color: black;
+    text-align: left;
+}
+
+.user-message {
+    align-self: flex-end;
+    background-color: #007bff;
+    color: white;
+    text-align: right;
+}
+
+.chatbot-footer {
+    padding: 20px;
+    background-color: #e7ebec;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.chatbot-select {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.chatbot-select select {
+    width: 78%;
+    padding:20px;
+    border: 1px solid #20662a;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.chatbot-footer button {
+    padding: 8px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+    max-width: 100px; /* Limit button width */
+    text-align: center;
+
+
+}
+
+.chatbot-footer button:hover {
+    background-color: #c35e65;
+}
