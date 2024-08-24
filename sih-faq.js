@@ -128,6 +128,119 @@ const faqData = {
         "સૌથી લોકપ્રિય પ્રદર્શનોમાં પ્રાચીન કલા અને સંસ્કૃતિઓનો ઇતિહાસ શામેલ છે.",
       "મ્યુઝિયમને સંપૂર્ણ રીતે શોધવા માટે કેટલો સમય લાગે છે?":
         "મ્યુઝિયમને સંપૂર્ણ રીતે શોધવા માટે લગભગ 2 કલાકનો સમય લાગે છે."
+    },
+    fr:{
+        "Quelles sont les heures d'ouverture du Musée National?": 
+          "Le Musée National est ouvert de 9h à 17h, du lundi au samedi.",
+          
+        "Le Musée National est-il ouvert les jours fériés?": 
+          "Le musée est fermé les jours fériés.",
+          
+        "Quel est le tarif d'entrée au Musée National?": 
+          "Le tarif d'entrée est de 10 $ pour les adultes et de 5 $ pour les enfants.",
+          
+        "Y a-t-il une réduction sur les billets d'entrée pour les étudiants ou les personnes âgées?": 
+          "Des réductions sont disponibles pour les étudiants et les personnes âgées.",
+          
+        "Comment puis-je réserver des billets en ligne pour le Musée National?": 
+          "Vous pouvez réserver des billets en ligne sur notre site web.",
+          
+        "Quelle est la meilleure heure pour visiter le Musée National?": 
+          "Le meilleur moment pour visiter est tôt le matin ou en fin d'après-midi.",
+          
+        "Quelles sont les expositions les plus populaires du Musée National?": 
+          "Les expositions les plus populaires comprennent des artefacts anciens et l'histoire des civilisations.",
+          
+        "Combien de temps faut-il pour visiter tout le musée?": 
+          "Il faut environ 2 heures pour visiter tout le musée.",
+          
+        "Y a-t-il des visites guidées disponibles au Musée National?": 
+          "Oui, des visites guidées sont disponibles sur demande."
+    },
+    sp:{
+        "¿Cuáles son los horarios de apertura del Museo Nacional?": 
+          "El Museo Nacional está abierto de 9 AM a 5 PM, de lunes a sábado.",
+          
+        "¿Está abierto el Museo Nacional en días festivos?": 
+          "El museo está cerrado los días festivos.",
+          
+        "¿Cuál es la tarifa de entrada al Museo Nacional?": 
+          "La tarifa de entrada es de $10 para adultos y $5 para niños.",
+          
+        "¿Hay un descuento en las entradas para estudiantes o personas mayores?": 
+          "Hay descuentos disponibles para estudiantes y personas mayores.",
+          
+        "¿Cómo puedo reservar entradas en línea para el Museo Nacional?": 
+          "Puedes reservar entradas en línea a través de nuestro sitio web.",
+          
+        "¿Cuál es el mejor momento para visitar el Museo Nacional?": 
+          "El mejor momento para visitar es temprano en la mañana o al final de la tarde.",
+          
+        "¿Cuáles son las exhibiciones más populares del Museo Nacional?": 
+          "Las exhibiciones más populares incluyen artefactos antiguos y la historia de las civilizaciones.",
+          
+        "¿Cuánto tiempo se tarda en recorrer todo el museo?": 
+          "Se tarda aproximadamente 2 horas en recorrer todo el museo.",
+          
+        "¿Hay visitas guiadas disponibles en el Museo Nacional?": 
+          "Sí, hay visitas guiadas disponibles a petición."
+    },
+    ger:{
+        "Was sind die Öffnungszeiten des Nationalmuseums?": 
+          "Das Nationalmuseum ist von 9 Uhr bis 17 Uhr, Montag bis Samstag, geöffnet.",
+          
+        "Ist das Nationalmuseum an Feiertagen geöffnet?": 
+          "Das Museum ist an Feiertagen geschlossen.",
+          
+        "Wie viel kostet der Eintritt ins Nationalmuseum?": 
+          "Der Eintritt beträgt 10 $ für Erwachsene und 5 $ für Kinder.",
+          
+        "Gibt es Ermäßigungen auf Eintrittskarten für Studenten oder Senioren?": 
+          "Es gibt Ermäßigungen für Studenten und Senioren.",
+          
+        "Wie kann ich Tickets online für das Nationalmuseum buchen?": 
+          "Sie können Tickets online über unsere Website buchen.",
+          
+        "Wann ist die beste Zeit, um das Nationalmuseum zu besuchen?": 
+          "Die beste Zeit für einen Besuch ist früh am Morgen oder spät am Nachmittag.",
+          
+        "Was sind die beliebtesten Ausstellungen im Nationalmuseum?": 
+          "Zu den beliebtesten Ausstellungen gehören antike Artefakte und die Geschichte der Zivilisationen.",
+          
+        "Wie lange dauert es, das gesamte Museum zu besichtigen?": 
+          "Es dauert etwa 2 Stunden, um das gesamte Museum zu besichtigen.",
+          
+        "Gibt es im Nationalmuseum Führungen?": 
+          "Ja, Führungen sind auf Anfrage verfügbar."
+      
+    },
+    jap:{
+      "国立博物館の開館時間は何時ですか?": 
+        "国立博物館は月曜日から土曜日の午前9時から午後5時まで開館しています。",
+        
+      "国立博物館は祝日に開館していますか?": 
+        "博物館は祝日に閉館しています。",
+        
+      "国立博物館の入場料はいくらですか?": 
+        "入場料は大人10ドル、子供5ドルです。",
+        
+      "学生や高齢者向けの割引はありますか?": 
+        "学生や高齢者向けの割引があります。",
+        
+      "国立博物館のチケットをオンラインで予約するにはどうすればいいですか?": 
+        "チケットは当館のウェブサイトからオンラインで予約できます。",
+        
+      "国立博物館を訪れるのに最適な時間はいつですか?": 
+        "訪れるのに最適な時間は、朝早くか午後遅くです。",
+        
+      "国立博物館で最も人気のある展示は何ですか?": 
+        "最も人気のある展示には、古代の遺物や文明の歴史が含まれます。",
+        
+      "博物館全体を見学するのにどのくらい時間がかかりますか?": 
+        "博物館全体を見学するには約2時間かかります。",
+        
+      "国立博物館ではガイドツアーがありますか?": 
+        "はい、ガイドツアーはリクエストに応じて利用できます。"
     }
   };
 
@@ -177,3 +290,63 @@ const faqData = {
 
   // Initialize
   populateQuestions();
+
+
+
+  // Function to get the user's preferred language
+function getUserLanguage() {
+  return navigator.language || navigator.userLanguage;
+}
+
+// Function to update the "Book-Ticket" button text based on the user's language
+function updateBookTicketButton() {
+  const userLang = getUserLanguage().substring(0, 2); // Get the first two letters of the language code
+  const bookTicketButton = document.getElementById('book-ticket');
+
+  switch (userLang) {
+      case 'en':
+          bookTicketButton.textContent = 'Book-Ticket';
+          break;
+      case 'fr':
+          bookTicketButton.textContent = 'Réserver un billet';
+          break;
+      case 'es':
+          bookTicketButton.textContent = 'Reservar boleto';
+          break;
+      case 'de':
+          bookTicketButton.textContent = 'Ticket buchen';
+          break;
+      case 'ja':
+          bookTicketButton.textContent = 'チケットを予約する';
+          break;
+      case 'hi':
+          bookTicketButton.textContent = 'टिकट बुक करें';
+          break;
+      case 'te':
+          bookTicketButton.textContent = 'టికెట్ బుక్ చేయండి';
+          break;
+      case 'ta':
+          bookTicketButton.textContent = 'டிக்கெட் முன்பதிவு';
+          break;
+      case 'kn':
+          bookTicketButton.textContent = 'ಟಿಕೆಟ್ ಬುಕ್ ಮಾಡಿ';
+          break;
+      case 'bn':
+          bookTicketButton.textContent = 'টিকিট বুক করুন';
+          break;
+      case 'gu':
+          bookTicketButton.textContent = 'ટિકિટ બુક કરો';
+          break;
+      default:
+          bookTicketButton.textContent = 'Book-Ticket'; // Default to English
+          break;
+  }
+}
+
+// Redirect to the booking page
+document.getElementById('book-ticket').addEventListener('click', function() {
+  window.location.href = 'http://127.0.0.1:5500/chatbot/dummy.html';
+});
+
+// Update the button text when the page loads
+updateBookTicketButton();
