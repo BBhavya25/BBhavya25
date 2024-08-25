@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Basic styling for gallery */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.gallery {
+    padding: 20px;
+}
+
+.gallery h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: blue;
+
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Center the categories */
+}
+
+.gallery-category {
+    flex: 1 1 calc(25% - 20px); /* Adjust to fit four categories per row */
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-category img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-category:hover img {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+.category-title {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #333;
+}
+
+.gallery-images {
+    display: none; /* Hidden by default */
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.gallery-images img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-images img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+</style>
+      
+</head>
+<body>
+
+    <!-- Gallery Section -->
+    <div class="gallery">
+        <h1>Gallery</h1>
+        <div class="gallery-container">
+            <div class="gallery-category" onclick="toggleCategory('decorative-arts')">
+                <img src="deco.png" alt="Decorative Arts Icon">
+                <h2 class="category-title">Decorative Arts</h2>
+                <div class="gallery-images" id="decorative-arts">
+                    <img src="deco1..jpg" alt="Decorative Arts 1">
+                    <img src="deco2.jpg" alt="Decorative Arts 2">
+                    <!-- Add more images as needed -->
+                </div>
+            </div>
+
+            <div class="gallery-category" onclick="toggleCategory('paintings')">
+                <img src="paint.jpeg" alt="Paintings Icon">
+                <h2 class="category-title">Paintings</h2>
+                <div class="gallery-images" id="paintings">
+                    <img src="paint1.jpg" alt="Paintings 1">
+                    <img src="paint2.jpg" alt="Paintings 2">
+                    <!-- Add more images as needed -->
+                </div>
+            </div>
+
+            <div class="gallery-category" onclick="toggleCategory('anthropology')">
+                <img src="anthro.jpeg" alt="Anthropology Icon">
+                <h2 class="category-title">Anthropology</h2>
+                <div class="gallery-images" id="anthropology">
+                    <img src="anthro1.jpeg" alt="Anthropology 1">
+                    <img src="anthro2.jpeg" alt="Anthropology 2">
+                    <!-- Add more images as needed -->
+                </div>
+            </div>
+
+            <div class="gallery-category" onclick="toggleCategory('jewellery')">
+                <img src="jewl.jpg" alt="Jewellery Icon">
+                <h2 class="category-title">Jewellery</h2>
+                <div class="gallery-images" id="jewellery">
+                    <img src="jewl1.jpg" alt="Jewellery 1">
+                    <img src="jewl2.jpg" alt="Jewellery 2">
+                    <!-- Add more images as needed -->
+                </div>
+            </div>
+
+            <div class="gallery-category" onclick="toggleCategory('archaeology')">
+                <img src="archo.jpeg" alt="Archaeology Icon">
+                <h2 class="category-title">Archaeology</h2>
+                <div class="gallery-images" id="archaeology">
+                    <img src="archo1.jpeg" alt="Archaeology 1">
+                    <img src="archo2.jpeg" alt="Archaeology 2">
+                    <!-- Add more images as needed -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleCategory(categoryId) {
+            const category = document.getElementById(categoryId);
+            if (category.style.display === "none" || category.style.display === "") {
+                category.style.display = "flex";
+            } else {
+                category.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>
