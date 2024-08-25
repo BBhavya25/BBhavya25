@@ -16,8 +16,6 @@ body {
     display: flex;
     flex-direction: column;
     height: 80%;
-    
-    
 }
 
 .chatbot-header {
@@ -47,6 +45,11 @@ body {
     font-family: 'Times New Roman', Times, serif;
 }
 
+#ask{
+    background-color: #a3d813;
+    color: white;
+}
+
 .bot-message {
     align-self: flex-start;
     background-color: #e0e0e0;
@@ -62,24 +65,24 @@ body {
 }
 
 .chatbot-footer {
-    padding: 10px;
+    padding: 8px;
     background-color: #e7ebec;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 10px;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 6px; /* Decreased gap for smaller footer */
 }
 
 .chatbot-select {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .chatbot-select select {
     width: 78%;
-    padding:20px;
+    padding: 10px; /* Reduced padding for a smaller footer */
     border: 1px solid #20662a;
     border-radius: 5px;
     font-size: 14px;
@@ -87,7 +90,7 @@ body {
 
 .chatbot-footer button {
     padding: 8px;
-    background-color: #07417f;
+    background-color: transparent; /* Removed background color */
     color: white;
     cursor: pointer;
     border: none;
@@ -96,44 +99,32 @@ body {
     width: 100%;
     max-width: 100px; /* Limit button width */
     text-align: center;
-
-
-}
-
-
-.chatbot-footer button:hover {
-    background-color: #c35e65;
 }
 
 #chatbot {
-     display: flex;
-    /* flex-direction: column; */
-    /* align-items: flex-start; Align elements to the left by default */ 
-    /* padding: 0px;  */
-    /* border: 1px solid #ccc; */
-    background-color: #f9f9f9;
-    width: 300px;
-    margin:30px;
-    position: relative; /* To position the button absolutely */
-  }
+    display: flex;
+    width: 100%; 
+    justify-content: space-between; 
+    position: relative; 
+    margin-top: 20px; /* Reduced margin-top for a smaller footer */
+    padding: 0px; /* Removed padding for buttons container */
+}
 
-  
-  #book-ticket {
-    position: absolute;
-    right: 0px; /* Adjust the right spacing */
-    bottom: 10px; /* Adjust the bottom spacing */
-    padding: 10px 20px;
-    background-color: #865d05;
-    color: white;
-    border: none;
-    margin-top: 70px;
+#book-ticket, #refund {
+    background-color: rgb(20, 5, 108); /* Removed background color */
+    color: white; /* Text color */
+    border: 2px solid #906407; /* Border with color */
+    padding: 8px 16px; /* Reduced padding */
     border-radius: 10px;
     cursor: pointer;
-    font-size: 16px;
-    margin-left: 20px;
-  }
-  
-  #book-ticket:hover {
-    background-color: #3e4c53;
-  }
-  
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+#book-ticket:hover, #refund:hover {
+    background-color: #865d05; /* Background color on hover */
+    color: white; /* Text color on hover */
+}
+#ask:hover{
+    background-color: rgb(227, 102, 123);
+}
