@@ -3,157 +3,285 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Gallery - National Museum of New Delhi</title>
+    <link rel="stylesheet" href="website.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        /* Basic styling for gallery */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-.gallery {
-    padding: 20px;
-}
+        header {
+            position: relative;
+            width: 100%;
+        }
 
-.gallery h1 {
-    font-size: 40px;
-    margin-bottom: 20px;
-    text-align: center;
-    color: blue;
+        .header-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
-}
+        .museum-image {
+            width: 100%;
+            height: auto;
+        }
 
-.gallery-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center; /* Center the categories */
-}
+        nav ul {
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            background-color: #333;
+            width: 100%;
+            justify-content: flex-end;
+        }
 
-.gallery-category {
-    flex: 1 1 calc(25% - 20px); /* Adjust to fit four categories per row */
-    box-sizing: border-box;
-    text-align: center;
-    position: relative;
-    cursor: pointer;
-    overflow: hidden;
-    border-radius: 8px;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
+        nav ul li {
+            margin: 0;
+        }
 
-.gallery-category img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 8px;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
+        nav ul li a {
+            display: block;
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
 
-.gallery-category:hover img {
-    transform: scale(1.05);
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
-}
+        nav ul li a.active {
+            background-color: #575757;
+        }
 
-.category-title {
-    font-size: 16px;
-    margin-top: 10px;
-    color: #333;
-}
+        .gallery {
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
 
-.gallery-images {
-    display: none; /* Hidden by default */
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-    padding-top: 10px;
-}
+        .gallery h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
 
-.gallery-images img {
-    width: 200px;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
 
-.gallery-images img:hover {
-    transform: scale(1.1);
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
-}
-</style>
-      
+        .gallery-item {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+            position: relative;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .gallery-item h3 {
+            margin: 10px 0;
+        }
+
+        .gallery-item .btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .gallery-item .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .more-info {
+            display: none;
+            padding: 10px;
+            background: #f9f9f9;
+            border-top: 1px solid #ddd;
+        }
+
+        .more-info.visible {
+            display: block;
+        }
+
+        .footer-container {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .footer-container ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .footer-container ul li {
+            margin: 0 10px;
+        }
+
+        .footer-container ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-container ul li a.active {
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <!-- <img src="https://i0.wp.com/theluxurytravelexpert.com/wp-content/uploads/2020/11/header2.jpg?fit=1300%2C731&ssl=1" alt="Museum Image" class="museum-image"> -->
+            <nav>
+                <ul>
+                    <li><a href="website.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="website.html#about"><i class="fas fa-info-circle"></i> About Us</a></li>
+                    <li><a href="website.html#exhibitions"><i class="fas fa-landmark"></i> Exhibitions</a></li>
+                    <li><a href="website.html#events"><i class="fas fa-calendar-alt"></i> Events</a></li>
+                    <li><a href="gallery.html" class="active"><i class="fas fa-images"></i> Gallery</a></li>
+                    <li><a href="website.html#visit"><i class="fas fa-map-marker-alt"></i> Visit Us</a></li>
+                    <li><a href="website.html#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
     <!-- Gallery Section -->
-    <div class="gallery">
-        <h1>Gallery</h1>
-        <div class="gallery-container">
-            <div class="gallery-category" onclick="toggleCategory('decorative-arts')">
-                <img src="deco.png" alt="Decorative Arts Icon">
-                <h2 class="category-title">Decorative Arts</h2>
-                <div class="gallery-images" id="decorative-arts">
-                    <img src="deco1..jpg" alt="Decorative Arts 1">
-                    <img src="deco2.jpg" alt="Decorative Arts 2">
-                    <!-- Add more images as needed -->
+    <section class="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <!-- Gallery Item 1 -->
+            <div class="gallery-item">
+                <img src="https://www.onlinechristiancolleges.com/wp-content/uploads/2014/04/Lead.jpg" alt="Artifact 1">
+                <h3>Ancient Manuscript</h3>
+                <p>This ancient manuscript provides insights into the early scripts and literary traditions of India.</p>
+                <button data-toggle="info1" class="btn">Learn More</button>
+                <div id="info1" class="more-info">
+                    <p>This manuscript, dating back to the 5th century AD, is written in Sanskrit and offers valuable information about the literary and philosophical developments of ancient India. The manuscript is decorated with intricate illustrations and has been preserved in excellent condition.</p>
                 </div>
             </div>
 
-            <div class="gallery-category" onclick="toggleCategory('paintings')">
-                <img src="paint.jpeg" alt="Paintings Icon">
-                <h2 class="category-title">Paintings</h2>
-                <div class="gallery-images" id="paintings">
-                    <img src="paint1.jpg" alt="Paintings 1">
-                    <img src="paint2.jpg" alt="Paintings 2">
-                    <!-- Add more images as needed -->
+            <!-- Gallery Item 2 -->
+            <div class="gallery-item">
+                <img src="https://www.tallengestore.com/cdn/shop/products/Mughal_Miniature_Evening_Melody_bdf764ca-c93a-455f-a3bb-f4bd8a6161b8.jpg?v=1495019319" alt="Artifact 6">
+                <h3>Rajput Miniature Paintings</h3>
+                <p>These vibrant paintings illustrate the rich artistic traditions of Rajput culture.</p>
+                <button data-toggle="info6" class="btn">Learn More</button>
+                <div id="info6" class="more-info">
+                    <p>The Rajput miniature paintings, known for their bright colors and intricate details, depict historical and mythological scenes. They offer insights into the cultural and artistic practices of the Rajput kingdoms.</p>
                 </div>
             </div>
 
-            <div class="gallery-category" onclick="toggleCategory('anthropology')">
-                <img src="anthro.jpeg" alt="Anthropology Icon">
-                <h2 class="category-title">Anthropology</h2>
-                <div class="gallery-images" id="anthropology">
-                    <img src="anthro1.jpeg" alt="Anthropology 1">
-                    <img src="anthro2.jpeg" alt="Anthropology 2">
-                    <!-- Add more images as needed -->
+            <!-- Gallery Item 3 -->
+            <div class="gallery-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv5AceKLJgLgC7hy9gR_dHf3wGiOdnr_KBIg&s" alt="Artifact 3">
+                <h3>Ancient Pottery</h3>
+                <p>Discover the intricacies of ancient Indian pottery and its role in daily life and rituals.</p>
+                <button data-toggle="info3" class="btn">Learn More</button>
+                <div id="info3" class="more-info">
+                    <p>This collection of pottery dates back to the Indus Valley Civilization and includes various types of vessels used for cooking, storage, and ceremonial purposes. The pottery is known for its distinctive shapes and elaborate designs.</p>
                 </div>
             </div>
 
-            <div class="gallery-category" onclick="toggleCategory('jewellery')">
-                <img src="jewl.jpg" alt="Jewellery Icon">
-                <h2 class="category-title">Jewellery</h2>
-                <div class="gallery-images" id="jewellery">
-                    <img src="jewl1.jpg" alt="Jewellery 1">
-                    <img src="jewl2.jpg" alt="Jewellery 2">
-                    <!-- Add more images as needed -->
+            <!-- Gallery Item 4 -->
+            <div class="gallery-item">
+                <img src="https://cdn.sanity.io/images/cctd4ker/production/ce31738e7c1207a88e68265e53b809ea150c68b2-1512x1080.jpg?w=3840&q=75&fit=clip&auto=format" alt="Artifact 4">
+                <h3>Royal Garments</h3>
+                <p>Admire the opulent garments worn by Indian royalty, showcasing the textile arts of the period.</p>
+                <button data-toggle="info4" class="btn">Learn More</button>
+                <div id="info4" class="more-info">
+                    <p>These garments, made from luxurious fabrics such as silk and adorned with intricate embroidery, represent the grandeur of Indian royalty. The designs and materials used reflect the wealth and status of the wearer.</p>
                 </div>
             </div>
 
-            <div class="gallery-category" onclick="toggleCategory('archaeology')">
-                <img src="archo.jpeg" alt="Archaeology Icon">
-                <h2 class="category-title">Archaeology</h2>
-                <div class="gallery-images" id="archaeology">
-                    <img src="archo1.jpeg" alt="Archaeology 1">
-                    <img src="archo2.jpeg" alt="Archaeology 2">
-                    <!-- Add more images as needed -->
+            <!-- Gallery Item 5 -->
+            
+
+            <div class="gallery-item">
+                <img src="https://images.metmuseum.org/CRDImages/as/original/CT_35465.jpg" alt="Artifact 8">
+                <h3>Jain Tirthankara Statue</h3>
+                <p>This statue of a Jain Tirthankara exemplifies the simplicity and serenity of Jain art.</p>
+                <button data-toggle="info8" class="btn">Learn More</button>
+                <div id="info8" class="more-info">
+                    <p>Carved from marble, this statue represents one of the Tirthankaras in Jainism. The serene expression and minimalistic design reflect the Jain principles of non-violence and asceticism.</p>
+                </div>
+            </div>
+
+            <!-- Gallery Item 6 -->
+            
+            <div class="gallery-item">
+                <img src="https://collectionapi.metmuseum.org/api/collection/v1/iiif/35823/61429/main-image" alt="Artifact 5">
+                <h3>Medieval Armor</h3>
+                <p>Explore the defensive armor used by Indian warriors in the medieval period.</p>
+                <button data-toggle="info5" class="btn">Learn More</button>
+                <div id="info5" class="more-info">
+                    <p>This set of medieval armor includes helmets, shields, and breastplates, showcasing the military craftsmanship and techniques used in warfare. The armor is intricately designed for protection and combat efficiency.</p>
+                </div>
+            </div>
+
+
+            <!-- Gallery Item 7 -->
+            <div class="gallery-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/BimaranCasket2.JPG/640px-BimaranCasket2.JPG" alt="Artifact 7">
+                <h3>Buddhist Stupa Relic</h3>
+                <p>This relic from a Buddhist stupa offers a glimpse into the early Buddhist architectural and spiritual practices.</p>
+                <button data-toggle="info7" class="btn">Learn More</button>
+                <div id="info7" class="more-info">
+                    <p>Stupas are sacred monuments that house relics of the Buddha or other important figures. This relic, adorned with carvings and inscriptions, represents the spread of Buddhism across India and its lasting influence.</p>
+                </div>
+            </div>
+
+            <!-- Gallery Item 8 -->
+            <div class="gallery-item">
+                <img src="https://c8.alamy.com/comp/2WA1THP/buddha-amida-bronze-statue-from-japan-1800-1850-exhibit-in-national-museum-of-scotland-in-edinburgh-scotland-uk-seated-in-meditation-pose-dhyana-2WA1THP.jpg" alt="Artifact 2">
+                <h3>Bronze Statue of Buddha</h3>
+                <p>This bronze statue of Buddha represents the artistic achievements of early Buddhist artisans.</p>
+                <button data-toggle="info2" class="btn">Learn More</button>
+                <div id="info2" class="more-info">
+                    <p>The statue, crafted during the 8th century, showcases the intricate metalworking techniques used to create religious artifacts. The serene expression and detailed drapery highlight the craftsmanship and devotion of the artisans.</p>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <ul>
+                <li><a href="website.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="website.html#about"><i class="fas fa-info-circle"></i> About Us</a></li>
+                <li><a href="website.html#exhibitions"><i class="fas fa-landmark"></i> Exhibitions</a></li>
+                <li><a href="website.html#events"><i class="fas fa-calendar-alt"></i> Events</a></li>
+                <li><a href="gallery.html" class="active"><i class="fas fa-images"></i> Gallery</a></li>
+                <li><a href="website.html#visit"><i class="fas fa-map-marker-alt"></i> Visit Us</a></li>
+                <li><a href="website.html#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </div>
+    </footer>
 
     <script>
-        function toggleCategory(categoryId) {
-            const category = document.getElementById(categoryId);
-            if (category.style.display === "none" || category.style.display === "") {
-                category.style.display = "flex";
-            } else {
-                category.style.display = "none";
-            }
-        }
+        document.querySelectorAll('.gallery-item .btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const moreInfo = document.getElementById(button.getAttribute('data-toggle'));
+                moreInfo.classList.toggle('visible');
+            });
+        });
     </script>
-
 </body>
 </html>
