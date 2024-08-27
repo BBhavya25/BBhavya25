@@ -104,16 +104,6 @@ body {
     cursor: pointer;
 } 
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position:relative;
-    bottom: 0;
-    width: 100%;
-}
-
 
 #about{
     font-size: medium;
@@ -122,4 +112,107 @@ footer {
 
 #contact{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    position:relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.2);
+}
+
+
+
+
+/* General Section Styling */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+
+.container {
+    width: 80%;
+    margin:5px;
+    padding: 20px;
+    margin-top: 20px;
+} 
+
+h2{
+    color: #333;
+    text-align: center;
+}
+
+.exhibition-section, .event-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.exhibition-item, .event-item {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.exhibition-item img, .event-item img {
+    width: 100%;
+    height: auto;
+}
+
+.more-info {
+    display: none;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.more-info p {
+    margin: 10px;
+}
+
+.exhibition-item:hover,
+.event-item:hover {
+    transform: translateY(-5px); /* Slightly lifts the item */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adds a more prominent shadow */
+}
+
+.exhibition-item img,
+.event-item img {
+    max-width: 100%;
+    height: 150px;
+    border-radius: 8px;
+    transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+}
+
+/* Image zoom effect on hover */
+.exhibition-item:hover img,
+.event-item:hover img {
+    transform: scale(1.05); /* Zooms the image slightly */
 }
