@@ -1,198 +1,138 @@
 body {
-  font-family: Arial, sans-serif;
-  background: url("https://media.istockphoto.com/photos/light-color-background-picture-id1071670250?k=20&m=1071670250&s=170667a&w=0&h=oKXFPAHPzb0KEDU6UTg2DHbIY-cL24k26OXjy0ZaH5Y=")
-    no-repeat center center fixed;
-  background-size: cover;
-  margin: 0;
-  padding: 0;
-  color: rgb(240, 139, 169);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #574758;
 }
 
-.welcome-message {
-  text-align: center;
-  font-family: sans-serif;
+.chatbot-container {
+    width: 400px;
+    height: 600px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    
+    
 }
 
-nav {
-  background-color: #90a799;
-  padding: 10px;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-nav ul li {
-  margin-left: 20px;
-}
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: flex-end;
-  color: blue;
-}
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-}
-.logo {
-  display: flex;
-  align-items: center;
+.chatbot-header {
+    background-color: #3592f4;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
-.logo img {
-  width: 40px;
-  height: 30px;
-  margin-right: 10px;
+.chatbot-body {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
 }
 
-.logo span {
-  color: white;
-  font-size: 24px;
-  font-weight: bold;
+.chatbot-message {
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    max-width: 80%;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-.menu-list li.active,
-.menu-list li:hover {
-  color: #0c020c;
+.bot-message {
+    align-self: flex-start;
+    background-color: #e0e0e0;
+    color: black;
+    text-align: left;
 }
 
-.welcome-message {
-  text-align: center;
-  margin: 20px 0;
+.user-message {
+    align-self: flex-end;
+    background-color: #007bff;
+    color: white;
+    text-align: right;
 }
 
-.welcome-message h1 {
-  font-size: 36px;
-  margin: 0;
+.chatbot-footer {
+    padding: 10px;
+    background-color: #e7ebec;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
-.welcome-message p {
-  font-size: 18px;
+.chatbot-select {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 
-.main-content {
-  text-align: center;
-  padding: 50px;
+.chatbot-select select {
+    width: 78%;
+    padding:20px;
+    border: 1px solid #20662a;
+    border-radius: 5px;
+    font-size: 14px;
 }
 
-.center-image {
-  width: 30%; /* Adjusted width */
-  height: aut0; /* Adjusted height */
-  margin-bottom: 20px;
+.chatbot-footer button {
+    padding: 8px;
+    background-color: #07417f;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+    max-width: 100px; /* Limit button width */
+    text-align: center;
+
+
 }
 
-.product-thumbnails {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+#ask{
+    margin-left: 130px;
 }
 
-.product {
-  text-align: center;
-  margin: 10px;
-  position: relative;
+.chatbot-footer button:hover {
+    background-color: #c35e65;
 }
 
-.product img {
-  width: 100px;
-  height: auto;
-  transition: transform 0.2s;
+#chatbot {
+     display: flex;
+    /* flex-direction: column; */
+    /* align-items: flex-start; Align elements to the left by default */ 
+    /* padding: 0px;  */
+    /* border: 1px solid #ccc; */
+    width: 300px;
+    margin:10px;
+    position: relative; /* To position the button absolutely */
+  }
+
+  
+  #book-ticket, #guidelines {
+    background-color: rgb(96, 8, 89); /* Removed background color */
+    color: white; /* Text color */
+    border: 2px solid #ae7905; /* Border with color */
+    padding: 8px 6px; /* Reduced padding */
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 60px;
 }
 
-.product.first-product img {
-  width: 150px; /* Decreased width */
-  height: 100px; /* Decreased height */
+#book-ticket:hover, #guidelines:hover {
+    background-color: #865d05; /* Background color on hover */
+    color: white;/*Text color on hover */
 }
-
-.product .cost {
-  display: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 10px;
-  border-radius: 5px;
-}
-
-.product:hover img {
-  transform: scale(1.1);
-}
-
-.product:hover .cost {
-  display: block;
-  color: whitesmoke;
-}
-
-.features-section {
-  text-align: center;
-  padding: 30px;
-}
-
-.features-section h1 {
-  font-size: 32px;
-  margin-bottom: 20px;
-  color: rgb(234, 234, 46);
-}
-
-.features-image {
-  width: 700px;
-  height: 400px;
-  margin-bottom: 20px;
-}
-
-.features {
-  list-style-type: none;
-  padding: 0;
-}
-
-.features li {
-  font-size: 18px;
-  margin: 10px 0;
-}
-
-.features-section {
-  color: rgb(241, 153, 224);
-}
-
-.info-section {
-  display: flex;
-  justify-content: space-around;
-  padding: 30px;
-  margin: 20px;
-}
-
-.about-section,
-.contact-section {
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 10px;
-  padding: 20px;
-  width: 45%;
-  color: rgb(52, 223, 208);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.about-section h2,
-.contact-section h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
-}
-
-.about-section p,
-.contact-section p {
-  font-size: 18px;
-  margin: 20px 0;
-}
-
-.contact-section ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.contact-section li {
-  font-size: 18px;
-  margin: 10px 0;
-}
+  

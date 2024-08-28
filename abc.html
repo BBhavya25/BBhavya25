@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museum Chatbot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="chatbot-container">
+        <div class="chatbot-header">
+            Museum Chatbot
+        </div>
+        <div class="chatbot-body" id="chatbot-body">
+            <div class="chatbot-message bot-message">
+                Welcome to the Museum Chatbot! How can I help you today?
+            </div>
+        </div>
+        <div class="chatbot-footer">
+            <select id="language">
+                <option value="en">English</option>
+                <option value="hi">Hindi (हिंदी)</option>
+                <option value="te">Telugu (తెలుగు)</option>
+                <option value="ta">Tamil (தமிழ்)</option>
+                <option value="kn">Kannada (ಕನ್ನಡ)</option>
+                <option value="bn">Bengali (বাংলা)</option>
+                <option value="gu">Gujarati (ગુજરાતી)</option>
+                <option value="fr">French (Français)</option>
+                <option value="ger">German (Deutsch)</option>
+                <option value="jap">Japanese (日本語)</option>
+                <option value="sp">Spanish (Español)</option>
+            </select>
+            <select id="questions">
+                <option value="">Select a question</option>
+            </select>
+            <button id="ask">Ask</button>
+            <div id="chatbot">
+                <button id="book-ticket" onclick="window.location.href='http://127.0.0.1:5500/chatbot/dummy.html';">Book-Ticket</button>
+                <button id="guidelines" onclick="window.location.href='http://127.0.0.1:5500/chatbot/guidelines.html';">GuideLines</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="faq.js"></script>
+</body>
+</html>
